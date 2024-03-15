@@ -5,6 +5,23 @@
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  position: relative;
+  &::before, &::after{
+    background-color: #003333;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    border-radius: 50%;
+    content: '';
+  }
+  &::after{
+    top: auto;
+    left: auto;
+    bottom: -2%;
+    right: -1%;
+  }
   h1{
     font-size: 30px;
     line-height: 40px;
