@@ -1,0 +1,39 @@
+.home{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  h1{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--musgo);
+  }
+  img{
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+  }
+  p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: inherit;
+    color: var(--musgo);
+    margin: 20px 0;
+  }
+  button{
+    background-color: var(--musgo);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--white);
+    border-radius: 50px;
+    padding: 15px 30px;
+
+  }
+}
