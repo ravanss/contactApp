@@ -24,6 +24,9 @@ main{
       font-weight: 300;
       text-transform: inherit;
       color: var(--verde);
+      .icone-plus{
+        font-size: 26px;
+      }
     }
     span{
       position: absolute;
@@ -75,12 +78,13 @@ main{
       border-bottom: 2px solid var(--verde);
       padding: 10px 5px;
       margin-bottom: 10px;
+      position: relative;
       img{
         width: 60px;
         height: auto;
         border: 3px solid var(--verdinho);
         border-radius: 50%;
-        margin-right: 10px;
+        margin-right: 15px;
         div{
           h1{
             font-size: 20px;
@@ -97,6 +101,16 @@ main{
             color: var(--verde);
           }
         }
+      }
+      .icone-bar{
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        bottom: auto;
+        left: auto;
+        font-size: 30px;
+        transform: translateY(-50%);
+        color: var(--musgo);
       }
     }
   }
