@@ -46,8 +46,8 @@ main{
     align-items: center;
     flex-wrap: nowrap;
     span{
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 14px;
+      line-height: 20px;
       font-weight: 400;
       text-transform: inherit;
       color: var(--verde);
@@ -57,17 +57,56 @@ main{
       }
     }
     button{
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 14px;
+      line-height: 20px;
       font-weight: 600;
       text-transform: uppercase;
       color: var(--cinza);
       background-color: var(--verde);
       border-radius: 20px;
+      padding: 10px 20px;
+      text-wrap: nowrap;
     }
   }
   .form{
     margin: 20px 0;
+    form{
+      position: relative;
+      padding-right: 20px;
+      input{
+        border: none;
+        border-bottom: 2px solid var(--musgo);
+        border-radius: 20px;
+        padding: 5px 10px;
+        width: 100%;
+        height: 40px;
+        background-color: var(--cinza);
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: inherit;
+        font-weight: 400;
+        color: var(--black);
+        &:focus-visible{
+          outline: none;
+        }
+      }
+      button{
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        left: auto;
+        top: auto;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--cinza);
+        background-color: var(--verde);
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-wrap: nowrap;
+      }
+    }
   }
   .lista-contato{
     .item{
