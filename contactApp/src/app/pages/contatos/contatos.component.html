@@ -12,7 +12,7 @@
   </section>
   <section class="form">
     <form [formGroup]="loginForm">
-      <input type="text" name="" id="" placeholder="Pesquise algum contato">
+      <input [type]="type" [formControlName]="formName" placeholder="Pesquise algum contato">
       <button>GO</button>
     </form>
   </section>

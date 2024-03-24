@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBars, faPlus } from '@fortawesome/free-solid-svg-icons';
+
+type InputTypes = "text";
 
 @Component({
   selector: 'app-contatos',
@@ -16,10 +18,14 @@ export class ContatosComponent {
 
   loginForm!: FormGroup;
 
+  @Input() type: InputTypes = "text";
+  @Input() formName: string = "";
+
   constructor(){
     this.loginForm = new FormGroup({
       nome: new FormControl('', [Validators.required]),
-      numero: new FormControl('', [Validators.required, Validators.minLength(3)])
+      //numero: new FormControl('', [Validators.required, Validators.minLength(3)])//
     })
   }
+
 }
