@@ -19,7 +19,6 @@ export class ContatosComponent {
   loginForm!: FormGroup;
 
   @Input() type: InputTypes = "text";
-  @Input() formName: string = "";
 
   constructor(){
     this.loginForm = new FormGroup({
