@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBars, faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -19,6 +19,7 @@ export class ContatosComponent {
   loginForm!: FormGroup;
 
   @Input() type: InputTypes = "text";
+  @Output("submit") onSubmit = new EventEmitter;
 
   constructor(){
     this.loginForm = new FormGroup({
