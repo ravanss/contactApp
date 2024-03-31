@@ -1,7 +1,7 @@
 <main>
   <header>
     <h1>Meus contatos</h1>
-    <button><fa-icon [icon]="faplus" class="icone-plus"></fa-icon></button>
+    <button (click)="navigation()"><fa-icon [icon]="faplus" class="icone-plus"></fa-icon></button>
     <span>amigos 000</span>
   </header>
   <section class="grupos">
@@ -14,8 +14,9 @@
     <form [formGroup]="loginForm">
       <input
         [type]="type"
+        formControlName="nome"
         placeholder="Pesquise algum contato">
-      <button>GO</button>
+      <button (click)="submit()">GO</button>
     </form>
   </section>
   <section class="lista-contato">
